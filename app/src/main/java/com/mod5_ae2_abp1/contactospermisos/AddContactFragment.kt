@@ -11,32 +11,29 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
-import com.mod5_ae2_abp1.contactospermisos.R
 
 /**
- * Fragmento para agregar un nuevo contacto.
- * * Utiliza un Intent Implícito (ContactsContract.Intents.Insert.ACTION) para delegar
- * la acción de guardar el contacto a la aplicación nativa del dispositivo.
- * Esto elimina la necesidad del permiso WRITE_CONTACTS en el Android Manifest y en el código.
+ *  Clase para el 'fragment' que agrega un nuevo contacto.
+ *  Como se modificó el permiso de escritura, se tuvo que agregar un 'Intent Implícito' (ContactsContract.Intents.Insert.ACTION)
+ *  lo cual permite delegar la acción de guardar el contacto a la clase nativa del dispositivo.
  */
 class AddContactFragment : Fragment() {
 
-    private lateinit var nameInput: EditText
+    private lateinit var nameInput   : EditText
     private lateinit var surnameInput: EditText
-    private lateinit var phoneInput: EditText
+    private lateinit var phoneInput  : EditText
+    private var contactSavedListener : OnContactSavedListener? = null
 
-    private var contactSavedListener: OnContactSavedListener? = null
-
-    // Uso de la API moderna de Activity Result para manejar el retorno del Intent.
+    // Manejo del retorno del Intent.
     private val saveContactLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-            // La aplicación nativa de contactos ya guardó (o descartó) el contacto.
 
-            // Notificar a la Activity para que recargue la lista y vuelva a la vista principal
+            // Notifica al sistema después de guardar
             contactSavedListener?.onContactSaved()
 
             // Muestra un mensaje de confirmación
-            Toast.makeText(context, "Operación de contacto finalizada. Recargando lista.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Operación de contacto finalizada. Recargando lista.",
+                Toast.LENGTH_SHORT).show()
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
