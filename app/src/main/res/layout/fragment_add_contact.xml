@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"> <!-- Fondo blanco para distinguirlo de la Activity -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Nuevo Contacto"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ID: input_name (referenciado en AddContactFragment.kt) -->
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <!-- ID: input_surname (referenciado en AddContactFragment.kt) -->
+    <EditText
+        android:id="@+id/input_surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <!-- ID: input_phone (referenciado en AddContactFragment.kt) -->
+    <EditText
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono"
+        android:inputType="phone"
+        android:minHeight="48dp" />
+
+    <!-- ID: button_save_contact (referenciado en AddContactFragment.kt) -->
+    <Button
+        android:id="@+id/button_save_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Guardar Contacto" />
+</LinearLayout>

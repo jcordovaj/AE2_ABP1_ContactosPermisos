@@ -1,0 +1,6 @@
+val intent = Intent(ContactsContract.Intents.Insert.ACTION).apply {
+    type = ContactsContract.RawContacts.CONTENT_TYPE
+    putExtra(ContactsContract.Intents.Insert.NAME, nombre)
+    putExtra(ContactsContract.Intents.Insert.PHONE, apellido)
+}
+startActivity(intent)
