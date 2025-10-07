@@ -15,9 +15,11 @@ Este mini proyecto, permite demostrar el uso de permisos sensibles mediante una 
 - **Fragments** : Para el formulario de nuevo contacto.
 
 ## 📸 Capturas de pantalla
+<p float="left">
+<img src="imgs/solicitud_permisos.png" width="150">
+<img src="imgs/aunSinContactosRegistrados.png" width="150">
+<img src="imgs/agregarNuevoContacto.png" width="150">
+<img src="imgs/guardarContactoNuevo.png" width="150">
+<img src="imgs/recargaVistaPrincipal.png" width="150">
+</p>
 
-<img src="imgs/solicitud_permisos.png" width="250">
-<img src="imgs/aunSinContactosRegistrados.png" width="250">
-<img src="imgs/agregarNuevoContacto.png" width="250">
-<img src="imgs/guardarContactoNuevo.png" width="250">
-<img src="imgs/recargaVistaPrincipal.png" width="250">
