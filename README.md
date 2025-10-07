@@ -16,59 +16,8 @@ Este mini proyecto, permite demostrar el uso de permisos sensibles mediante una 
 
 ## 📸 Capturas de pantalla
 
-<p float="left">
-    <img src="imgs/solicitud_permisos.png" width="250">
-    <img src="imgs/aunSinContactosRegistrados.png" width="250">
-    <img src="imgs/agregarNuevoContacto.png" width="250">
-    <img src="imgs/guardarContactoNuevo.png" width="250">
-    <img src="imgs/recargaVistaPrincipal.png" width="250">
-</p>
-## Instalación y Configuración
-
-a. **Clonar el repositorio:**
-
-```bash
-
-https://github.com/jcordovaj/AE2_ABP1_ContactosPermisos.git
-
-```
-
-b. **Abrir el Proyecto en Android Studio:**
-
-b.1. Abrir Android Studio.
-
-b.2. En la pantalla de bienvenida, seleccionar **"Open an existing Android Studio project"** (Abrir un proyecto de Android Studio existente).
-
-b.3. Navegar a la carpeta donde se clonó el repositorio y seleccionarla. Android Studio detectará automáticamente el proyecto de Gradle y comenzará a indexar los archivos.
-
-c. **Sincronizar Gradle:**
-
-c.1. Este es el paso más importante. Después de abrir el proyecto, Android Studio intentará sincronizar la configuración de Gradle. Esto significa que descargará todas las librerías, dependencias y plugins necesarios para construir la aplicación. Normalmente, una barra de progreso se mostrará en la parte inferior de la consola de Android Studio con un mensaje como **"Gradle Sync in progress"**.
-
-c.2. Si no se inicia, o si el proceso falla, intente con el botón **"Sync Project with Gradle Files"** en la barra de herramientas. Es el icono con el **"elefante" de Gradle**. Eso forzará la sincronización.
-
-c.3. Esperar que el proceso de sincronización termine. De haber errores, puede ser por problemas en la configuración de Android u otros conflictos, la aplicación debe descargar lo que requiera y poder ser ejecutada "AS-IS".
-
-d. **Configurar el Dispositivo o Emulador:**
-
-Para ejecutar la aplicación, se requiere un dispositivo Android, puedes usarse el emulador virtual o un dispositivo físico.
-
-d.1. Emulador: En la barra de herramientas, haga click en el botón del "AVD Manager" (Android Virtual Device Manager), que es el icono de un teléfono móvil con el logo de Android. Desde ahí, puedes crear un nuevo emulador con la versión de Android que prefiera (Nota: Debe considerar que cada celular emulado, puede requerir más de 1GB de espacio en disco y recursos de memoria).
-
-d.2. Dispositivo físico: Conecte su teléfono Android a la computadora con un cable USB (también puede ser por WI-FI). Asegúrese de que las **Opciones de desarrollador y la Depuración por USB** estén habilitadas en su dispositivo. Consulte a su fabricante para activar estas opciones.
-
-e. **Ejecutar la aplicación:**
-
-e.1. Seleccione el dispositivo o emulador deseado en la barra de herramientas del emulador.
-
-e.2. Haga click en el botón "Run 'app'" (el triángulo verde en la parte superior, o vaya al menu "RUN") para iniciar la compilación y el despliegue de la aplicación, puede tardar algunos minutos, dependiendo de su computador.
-
-e.3. Si todo ha sido configurado correctamente, la aplicación se instalará en el dispositivo y se iniciará automáticamente, mostrando la pantalla de inicio.
-
-## Contribuciones (Things-To-Do)
-
-Se puede contribuir reportando problemas o con nuevas ideas, por favor respetar el estilo de programación y no subir código basura. Puede utilizar: forking del repositorio, crear pull requests, etc. Toda contribución es bienvenida.
-
-## Licencia
-
-Proyecto con fines educativos, Licencia MIT
+<img src="imgs/solicitud_permisos.png" width="250">
+<img src="imgs/aunSinContactosRegistrados.png" width="250">
+<img src="imgs/agregarNuevoContacto.png" width="250">
+<img src="imgs/guardarContactoNuevo.png" width="250">
+<img src="imgs/recargaVistaPrincipal.png" width="250">
